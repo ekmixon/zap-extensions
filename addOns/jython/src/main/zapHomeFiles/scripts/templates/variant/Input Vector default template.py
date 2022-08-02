@@ -51,7 +51,7 @@ def setParameter(helper, msg, param, value, escaped):
     # Rebuild the header with the attack...
     header = ''
     for parameter in helper.getParamList():
-        header += parameter.getName() + '='
+        header += f'{parameter.getName()}='
         if parameter.getName() == param:
             header += urllib.quote(value)
         else:

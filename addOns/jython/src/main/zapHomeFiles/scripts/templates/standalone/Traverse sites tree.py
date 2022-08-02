@@ -8,10 +8,8 @@ They are only evaluated when you run them.
 from org.parosproxy.paros.model import Model
 
 def listChildren(node, level):
-  indent = ""
-  for i in range (0, level):
-    indent += "    "
-  for j in range (0, node.getChildCount()):
+  indent = "".join("    " for _ in range(level))
+  for j in range(node.getChildCount()):
     print(indent + node.getChildAt(j).getNodeName())
     listChildren(node.getChildAt(j), level+1)
 

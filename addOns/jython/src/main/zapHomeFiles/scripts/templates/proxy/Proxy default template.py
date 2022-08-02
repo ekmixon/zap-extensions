@@ -10,11 +10,15 @@ Right click the script in the Scripts tree and select "enable"
 
 def proxyRequest(msg):
   # Debugging can be done using print like this
-  print('proxyRequest called for url=' + msg.getRequestHeader().getURI().toString()); 
+  print(
+      f'proxyRequest called for url={msg.getRequestHeader().getURI().toString()}'
+  );
   return True;
 
 def proxyResponse(msg):
   # Debugging can be done using print like this
-  print('proxyResponse called for url=' + msg.getRequestHeader().getURI().toString()); 
+  print(
+      f'proxyResponse called for url={msg.getRequestHeader().getURI().toString()}'
+  );
   return True;
 

@@ -22,7 +22,7 @@ def appliesToHistoryType(historyType):
 
 
 def scan(ps, msg, src):
-  """Passively scans the message sent/received through ZAP.
+    """Passively scans the message sent/received through ZAP.
 
   Args:
     ps (ScriptsPassiveScanner): The helper class to raise alerts and add tags to the message.
@@ -30,8 +30,6 @@ def scan(ps, msg, src):
     src (Source): The HTML source of the message (if any). 
 
   """
-  # Test the request and/or response here
-  if (True):
     # Change to a test which detects the vulnerability
     # raiseAlert(risk, int confidence, String name, String description, String uri, 
     # String param, String attack, String otherInfo, String solution, String evidence, 
